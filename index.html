@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="hero">
         <nav>
             <img src="" alt="">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="#">Experiences</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="detel">
+
+<!-- Home -->
+        <div class="detel" id="Home">
             <h1>Hello it's me <span>Nabila</span></h1>
             <p>This is my official portofolio website to showes all
                 <br>details about me 
             </p>
-        <a href="#">Download CV</a>
+        <a href="#" class="button">Download CV</a>
         </div>
         <div class="images">
             <img src="img/shape.png" class="shape">
@@ -30,43 +35,82 @@
         </div>
     </div>
 
-    <section class="about">
+<!-- About Me -->
+    <section class="about" id="about">
         <div class="about-me">
             <img src="">
             <div class="about-text">
                 <h2>About <span>Me</span></h2>
                 <h5><span>Student</span> & <span>Web Programmer</span></h5>
-                <p>Saya Nabila Putri Normalita, kelahiran tahun 2003. Saya adalah seorang mahasiswi Sistem Informasi Universitas Mulawarman.</p>
-                <a href="#" class="button">Contact Me</a>
+                <p>Saya Nabila Putri Normalita, kelahiran tahun 2003. Saya adalah seorang mahasiswi Sistem Informasi Universitas Mulawarman.
+                    Belum banyak memiliki pengalaman but, im someone who wants to <span>try and learn.</span>
+                </p><br>
+
+                <h5>Pendidikan</h5>
+                <ul>
+                    <li><p>SMK TI Airlangga Samarinda</p></li>
+                    <p><span>Rekayasa Perangkat Lunak</span></p>
+                    <p><span>2018 - 2021</span></p>
+                    <li><p>Universitas Mulawarman</p></li>
+                    <p><span>Sistem Informasi</span></p>
+                    <p><span>2022 - present</span></p>
+                </ul><br>              
             </div>
         </div>
     </section>
 
-    <section class="service">
+<!-- Certificate -->
+    <section class="certi" id="certificate">
         <div class="tittle">
             <h2>Certificate</h2>
-        </div>
-        <div class="box">
-            <div class="card">
-
+            <div class="sertif">
+                <div class="box-1">
+                    <img src="img/sertif1.jpeg" alt="">
+                    <p><h3>Sertifikat Seminar</h3></p>
+                </div>
+                <div class="box-2">
+                    <img src="img/sertif2.jpeg" alt="">
+                    <p><h3>Sertifikat Kepanitiaan</h3></p>
+                </div>
+                <div class="box-3">
+                    <img src="img/sertif3.jpeg" alt="">
+                    <p><h3>Sertifikat Course</h3></p>
+                </div>
+                <div class="box-4">
+                    <img src="img/sertif4.png" alt="">
+                    <p><h3>Sertifikat Organisasi </h3></p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- <div class="about">
-            <h1 style="margin-left: 600px;">About Me</h1>
+    <!-- Contact -->
+    <section class="contact"> 
+        <div class="container">
+            <form>
+                <h1>Contact Me Form</h1>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="mobile" placeholder="Mobile" required>
+                <h4>Type Your Message Here...</h4>
+                <textarea required></textarea>
+                <input type="submit" value="Send" id="button">
+            </form>
+        </div>
+    </section>
+    
 
-            <p class="halo">Hello, my full name is Nabila Putri Normalita,
-                I was born in 2003. <br> I don't have much experience
-                but I'm someone who wants to <span>try n learn.</span></p>
-        
-            <h2>Education</h2>
-                <ul>
-                    <li>Mulawarman University</li><br>
-                    <span>2022 - present</span><br>
-                    <li>SMK TI Airlangga</li><br>
-                    <span>2018 - 2021</span>
-                </ul>
-    </div> -->
+    <footer>
+        <div class="footerContainer" id="contact">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/nabilaptrinor?igsh=MTN5Zmg0ZjhheWZhNg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Nabila</span></p>
+        </div>
+    </footer>
 </body>
 </html>
